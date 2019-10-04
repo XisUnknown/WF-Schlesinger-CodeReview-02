@@ -1,0 +1,215 @@
+$max-width-desktop: 600px;
+$background-color-nav-top: red; 
+$color-nav-top-link: #f2f2f2;
+$nav-link-padding: 10px;
+$nav-link-font-size: 17px;
+$link-hover-background-color: #ddd;
+$link-hover-font-color: black; 
+$link-active-background-color: #4CAF50;
+$link-active-font-color: white;
+$input-height:2em;
+$input-width:27em; 
+$background-url:"./img/traffic-332857_1920.jpg";
+$background-color-main:lightgrey;
+$border-radius-button:2em;
+$height-button:2.5em;
+$width-button:15em;
+$font-size-button:15pt;
+$label-font-size:10pt;
+$legend-color:white;
+$maincontainer-width:95%;
+$maincontainer-height:30em;
+$border-style-maincontainer:solid;
+$border-color-maincontainer:black;
+$maincontainer-header-fontsize:30pt;
+$maincontainer-header-width:50%;
+$form-height:50%;
+$header-background-color:#f4e6fa;
+$flex-basis-form:48%;
+$calc-output-margin-top:3em;
+$calc-output-height:20%;
+$calc-output-color:green;
+$header-img-margin:10px;
+$link-color-footer:white;
+$footer-height:15em;
+$copyright-font-size:10pt;
+$pic-height:100%;
+$footer-bg-color:black;
+$container2-height:30em;
+
+@media screen and (max-width: $max-width-desktop) {
+
+    .topnav a:not(:first-child) {
+        display: none;
+    }
+
+    .topnav a.icon {
+        float: right;
+        display: block;
+    }
+}
+@media screen and (max-width: $max-width-desktop) {
+    .topnav.responsive {
+        position: relative;
+    }
+
+    .topnav.responsive a.icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+}
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color: $background-color-nav-top;
+    overflow: hidden;
+}
+.topnav a {
+    float: left;
+    display: block;
+    color: $color-nav-top-link;
+    text-align: center;
+    padding: $nav-link-padding $nav-link-padding;
+    text-decoration: none;
+    font-size: $nav-link-font-size;
+}
+.topnav a:hover {
+    background-color: $link-hover-background-color;
+    color: $link-hover-font-color;
+}
+.topnav a.active {
+    background-color: $link-active-background-color;
+    color: $link-active-font-color;
+}
+.topnav .icon {
+    display: none;
+}
+input{
+    height: $input-height;
+    width: $input-width;
+}
+select{
+    height: $input-height;
+    width: $input-width;
+}
+main{
+    
+    background-image: url($background-url);
+    background-repeat: no-repeat;
+    background-size: 100% 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: $background-color-main;
+}
+.sub_text{
+    text-align: center;
+}
+button{
+    border-radius: $border-radius-button;
+    height: $height-button;
+    width: $width-button;
+    align-self: center;
+    color: white;
+    background-color: green;
+    border-style: none;
+    font-size: $font-size-button;
+}
+label{
+    font-size: $label-font-size;
+}
+main>h1{
+    align-self: flex-start;
+    color: $legend-color;
+
+}
+
+
+
+.maincontainer{
+    align-self: center;
+    background-color: rgba(211, 211, 211, 0.8);
+    width: $maincontainer-width;
+    height: $maincontainer-height;
+    display: flex;
+    flex-direction: column;
+    border: $border-style-maincontainer $border-color-maincontainer;
+}
+.maincontainer>h1{
+    align-self: center;
+    font-size: $maincontainer-header-fontsize;
+    text-align: center;
+    width:  $maincontainer-header-width;
+}
+.maincontainer>.form{
+    height: $form-height;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.maincontainer>.form>.input{
+    flex-basis: $flex-basis-form;
+    
+    }
+.calc_output{
+    margin-top: $calc-output-margin-top;
+    height: $calc-output-height;
+    align-self: center;
+    text-align: center;
+}
+.maincontainer>.calc_output>h2{
+    color: $calc-output-color;
+}
+
+header {
+    background-color: $header-background-color;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+header img {
+    margin: $header-img-margin;
+}
+a {
+  color: white;
+  text-decoration: none;
+}
+
+footer {
+    background-color: black;
+    color: $link-color-footer;
+    height: $footer-height;
+}
+
+.footerlogo {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#name {
+    display: flex;
+    justify-content: center;
+    font-size: $copyright-font-size;
+}
+
+.pic {
+    height: $pic-height;
+}
+#myTopnavfooter {
+    background-color: $footer-bg-color;
+}
+.container2{
+    height: $container2-height;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
