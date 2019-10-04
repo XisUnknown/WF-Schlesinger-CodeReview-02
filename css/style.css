@@ -66,16 +66,19 @@
 .topnav .icon {
     display: none;
 }
-input{
+
+input {
     height: 2em;
     width: 27em;
 }
-select{
+
+select {
     height: 2em;
     width: 27em;
 }
-main{
-    
+
+main {
+
     background-image: url("../img/traffic-332857_1920.jpg");
     background-repeat: no-repeat;
     background-size: 100% 80%;
@@ -84,10 +87,12 @@ main{
     justify-content: center;
     background-color: lightgrey;
 }
-.sub_text{
+
+.sub_text {
     text-align: center;
 }
-button{
+
+button {
     border-radius: 2em;
     height: 2.5em;
     width: 15em;
@@ -97,16 +102,19 @@ button{
     border-style: none;
     font-size: 15pt;
 }
-label{
+
+label {
     font-size: 10pt;
 }
-main>h1{
+
+main>h1 {
     align-self: flex-start;
-    
+
     color: white;
 
 }
-.maincontainer{
+
+.maincontainer {
     align-self: center;
     background-color: rgba(211, 211, 211, 0.8);
     width: 95%;
@@ -115,31 +123,36 @@ main>h1{
     flex-direction: column;
     border: solid black;
 }
-.maincontainer>h1{
+
+.maincontainer>h1 {
     align-self: center;
     font-size: 25pt;
     text-align: center;
-    width:  50%;
+    width: 50%;
 }
-.maincontainer>.form{
-     
+
+.maincontainer>.form {
+
     height: 50%;
     display: flex;
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
 }
-.maincontainer>.form>.input{
+
+.maincontainer>.form>.input {
     flex-basis: 48%;
-    
-    }
-.calc_output{
+
+}
+
+.calc_output {
     margin-top: 3em;
     height: 20%;
     align-self: center;
     text-align: center;
 }
-.maincontainer>.calc_output>h2{
+
+.maincontainer>.calc_output>h2 {
     color: green;
 }
 
@@ -156,9 +169,10 @@ header {
 header img {
     margin: 10px;
 }
+
 a {
-  color: white;
-  text-decoration: none;
+    color: white;
+    text-decoration: none;
 }
 
 footer {
@@ -180,16 +194,19 @@ footer {
 .pic {
     height: 100%
 }
+
 #myTopnavfooter {
     background-color: black;
 }
-.container2{
+
+.container2 {
     height: 30em;
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
-.content_ad{
+
+.content_ad {
     border-top: solid black;
     border-right: solid grey;
     border-left: solid grey;
@@ -198,26 +215,30 @@ footer {
     width: 32vw;
     margin: 0 auto;
 }
+
 .content_ad h3 {
     font-style: italic;
     color: cadetblue;
     margin: 5px;
 }
+
 .content_ad h4 {
     margin: 5px;
 }
+
 .content_ad ul {
     margin: 10px;
 }
+
 .content_ad p {
     margin: 5px;
 }
+
 ul li:before {
-  content: '✓';
-  color: green;
+    content: '✓';
+    color: green;
 }
+
 ul {
-  list-style: none;
+    list-style: none;
 }
-
-
