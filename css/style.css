@@ -76,7 +76,7 @@ select{
 }
 main{
     
-    background-image: url("./img/traffic-332857_1920.jpg");
+    background-image: url("../img/traffic-332857_1920.jpg");
     background-repeat: no-repeat;
     background-size: 100% 80%;
     display: flex;
