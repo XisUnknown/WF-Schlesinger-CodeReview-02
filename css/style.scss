@@ -36,6 +36,11 @@ $copyright-font-size:10pt;
 $pic-height:100%;
 $footer-bg-color:black;
 $container2-height:30em;
+$font-style-ad-header:italic;
+$font-color-ad-header:cadetblue;
+$font-header-margin:5px;
+$list-ad-margin:10px;
+$list-content-color:green;
 
 @media screen and (max-width: $max-width-desktop) {
 
@@ -212,4 +217,32 @@ footer {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+}
+
+
+.content_ad h3 {
+    font-style: $font-style-ad-header;
+    color: $font-color-ad-header;
+    margin: $font-header-margin;
+}
+
+.content_ad h4 {
+    margin: $font-header-margin;
+}
+
+.content_ad ul {
+    margin: $list-ad-margin;
+}
+
+.content_ad p {
+    margin: $font-header-margin;
+}
+
+ul li:before {
+    content: '✓';
+    color: $list-content-color;
+}
+
+ul {
+    list-style: none;
 }

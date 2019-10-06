@@ -2,16 +2,7 @@
     margin: 0;
 }
 
-ul li:before {
-    content: '✓';
-    color: green;
-}
-
-ul {
-    list-style: none;
-}
-
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 600px) {
 
     .topnav a:not(:first-child) {
         display: none;
@@ -24,7 +15,7 @@ ul {
 }
 
 /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 600px) {
     .topnav.responsive {
         position: relative;
     }
@@ -78,16 +69,12 @@ ul {
 
 input {
     height: 2em;
-    width: 100%;
+    width: 27em;
 }
 
 select {
-    display: inline-block;
-    height: 2.5em;
-    width: 100%;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
+    height: 2em;
+    width: 27em;
 }
 
 main {
@@ -101,41 +88,19 @@ main {
     background-color: lightgrey;
 }
 
-@media screen and (max-width: 480px) {
-    main h3 {
-        font-size: 12pt;
-        line-height: 1.5;
-    }
-}
-
-
 .sub_text {
     text-align: center;
 }
 
-@media screen and (max-width: 480px) {
-    button {
-        font-size: 3vw;
-    }
-}
-
-
 button {
-    border-radius: 20px;
-    height: 12%;
-    width: 20%;
+    border-radius: 2em;
+    height: 2.5em;
+    width: 15em;
     align-self: center;
     color: white;
     background-color: green;
     border-style: none;
-    font-size: 2vw;
-}
-
-@media screen and (max-width: 480px) {
-    button {
-        height: 20%;
-        font-size: 3vw;
-    }
+    font-size: 15pt;
 }
 
 label {
@@ -144,34 +109,20 @@ label {
 
 main>h1 {
     align-self: flex-start;
-    color: white;
-}
 
+    color: white;
+
+}
 
 .maincontainer {
     align-self: center;
     background-color: rgba(211, 211, 211, 0.8);
     width: 95%;
-    height: 50vh;
+    height: 30em;
     display: flex;
     flex-direction: column;
-    border: solid grey;
-    box-shadow: 2px 2px 2px 3px rgba(0, 0, 0, 0.2);
-    padding-bottom: 30px;
+    border: solid black;
 }
-
-@media screen and (max-width: 480px) {
-    .maincontainer {
-        align-self: center;
-        background-color: rgba(211, 211, 211, 0.8);
-        width: 95%;
-        height: 60vh;
-        display: flex;
-        flex-direction: column;
-
-    }
-}
-
 
 .maincontainer>h1 {
     align-self: center;
@@ -180,28 +131,13 @@ main>h1 {
     width: 50%;
 }
 
-@media screen and (max-width: 480px) {
-    .maincontainer>h1 {
-        font-size: 17pt;
-        width: 70%;
-    }
-}
-
 .maincontainer>.form {
 
-    height: 60vh;
+    height: 50%;
     display: flex;
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
-}
-
-@media screen and (max-width: 480px) {
-    .maincontainer>.form {
-
-        height: 60vh;
-        margin-bottom: 2%;
-    }
 }
 
 .maincontainer>.form>.input {
@@ -209,17 +145,9 @@ main>h1 {
 
 }
 
-
-@media screen and (max-width: 480px) {
-    .maincontainer>.form>.input {
-        flex-basis: 70%;
-    }
-}
-
-
 .calc_output {
-    margin-top: 3%;
-    height: 20vh;
+    margin-top: 3em;
+    height: 20%;
     align-self: center;
     text-align: center;
 }
@@ -236,12 +164,6 @@ header {
     justify-content: space-evenly;
     align-items: center;
 
-}
-
-@media screen and (max-width: 480px) {
-    header {
-        flex-direction: column;
-    }
 }
 
 header img {
@@ -278,17 +200,10 @@ footer {
 }
 
 .container2 {
-    height: 50vh;
+    height: 30em;
     display: flex;
     justify-content: space-around;
     align-items: center;
-}
-
-@media screen and (max-width: 480px) {
-    .container2 {
-        height: auto;
-        display: block;
-    }
 }
 
 .content_ad {
@@ -296,10 +211,9 @@ footer {
     border-right: solid grey;
     border-left: solid grey;
     border-bottom: solid grey;
-    height: 60%;
-    width: 35%;
+    height: 30vh;
+    width: 32vw;
     margin: 0 auto;
-    box-shadow: 2px 2px 2px 3px rgba(0, 0, 0, 0.2);
 }
 
 .content_ad h3 {
@@ -320,9 +234,11 @@ footer {
     margin: 5px;
 }
 
-@media screen and (max-width: 480px) {
-    .content_ad {
-        width: 300px;
-    }
+ul li:before {
+    content: '✓';
+    color: green;
+}
 
+ul {
+    list-style: none;
 }
